@@ -2,6 +2,13 @@ package singleton;
 
 public class SingletonClass {
 	
+	/*
+	 * Rules:
+	 * 1. Make the object static
+	 * 2. Make the constructor private
+	 * 3. Create a method to create & return the object
+	 */
+	
 	public static SingletonClass ob1;
 	
 	private SingletonClass() {
