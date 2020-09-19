@@ -6,7 +6,15 @@ import java.util.Map;
 public class CountNoOfWordsInAString {
 	public static void main(String args[]) {
 		String message = "I stay at Nashua. I love Nashua. I love sports";
+		getWordCount(message);
 		
+		
+		
+		
+		
+	}
+	
+	public static void getWordCount(String message) {
 		Map<String,Integer> map = new HashMap<>();        //Declaring a hashMap with the type of key and value
 		String[] arrMessage = message.split(" ");
 		
@@ -22,7 +30,5 @@ public class CountNoOfWordsInAString {
 //			System.out.println("The count of "+str+" is "+map.get(str));
 			System.out.println("The count of "+str+" is "+map.get(str));
 		}
-		
-		
 	}
 }
