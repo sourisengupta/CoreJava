@@ -3,9 +3,9 @@ package Abstract;
 import java.io.*;
 
 public class Main {
-	public static void main(String args[]) throws IOException {
-		
-		System.out.println("Test Project");
-		
-	}
+//	public static void main(String args[]) throws IOException {
+//		
+//		System.out.println("Test Project");
+//		
+//	}
 }
