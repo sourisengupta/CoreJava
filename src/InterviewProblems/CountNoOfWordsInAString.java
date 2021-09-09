@@ -6,12 +6,26 @@ import java.util.Map;
 public class CountNoOfWordsInAString {
 	public static void main(String args[]) {
 		String message = "I stay at Nashua. I love Nashua. I love sports";
-		getWordCount(message);
+		test(message);
+	}
+	
+	public static void test(String message) {
+		Map<String, Integer> map = new HashMap<>();
 		
+		String [] arrMessage = message.split(" ");
 		
+		for(int i=0; i<arrMessage.length;i++) {
+			if(!map.containsKey(arrMessage[i])) {
+				map.put(arrMessage[i], 1);
+			}
+			else {
+				map.put(arrMessage[i], map.get(arrMessage[i])+1);
+			}
+		}
 		
-		
-		
+		for (String str: map.keySet()) {
+			System.out.println("Count of "+str+ "is "+map.get(str));
+		}
 	}
 	
 	public static void getWordCount(String message) {
