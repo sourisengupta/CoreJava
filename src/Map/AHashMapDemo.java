@@ -13,7 +13,7 @@ public class AHashMapDemo {
 		map.put(9, "Souri");
 		map.put(2, "Nabanita");
 		map.put(6, "Shriya"); 
-		map.put(1, "Ashima");	 
+		map.put(1, "Ashima");
 	
 		/* Entry is the subinterface of Map. So we will be accessed it by Map.
 		 * Entry name. It returns a collection-view of the map, whose elements are of this class. 
