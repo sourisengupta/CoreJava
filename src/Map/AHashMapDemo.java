@@ -11,6 +11,7 @@ public class AHashMapDemo {
 		
 		Map<Integer,String> map = new HashMap<Integer, String>();
 		map.put(9, "Souri");
+		map.put(11, "Tulika");
 		map.put(2, "Nabanita");
 		map.put(6, "Shriya"); 
 		map.put(1, "Ashima");
