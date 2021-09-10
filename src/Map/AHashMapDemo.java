@@ -12,7 +12,7 @@ public class AHashMapDemo {
 		Map<Integer,String> map = new HashMap<Integer, String>();
 		map.put(9, "Souri");
 		map.put(2, "Nabanita");
-		map.put(6, "Shriya");
+		map.put(6, "Shriya"); 
 		map.put(1, "Ashima");	 
 	
 		/* Entry is the subinterface of Map. So we will be accessed it by Map.
