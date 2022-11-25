@@ -11,9 +11,9 @@ public class JsonInJava_02 {
 	public static void main(String args[]) throws ParseException {
 		JSONObject json = writeJsonSimpleDemo();
 		System.out.println("json: "+json);
+		
 		JSONParser parser = new JSONParser();
 		Object parsedJSon = parser.parse(json.toString());
-		
 		JSONObject jsonData = (JSONObject)parsedJSon;
 		
 		System.out.println("Parsed Value:-");

@@ -1,12 +1,15 @@
 package InterviewProblems;
 import java.util.Arrays;
 
+//An anagram is a word or phrase formed by rearranging the letters 
+//of a different word or phrase, typically using all the original letters exactly once.
+
 public class AnagramCheck {
 	
 	public static void main(String []args){
         boolean flag = analogWord("race","care");
         if(flag){
-            System.out.println("The words are analog");
+            System.out.println("The words are analog ");
         }
         else{
             System.out.println("The words are not analog");
