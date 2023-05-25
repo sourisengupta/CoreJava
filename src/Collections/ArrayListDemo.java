@@ -25,20 +25,17 @@ public class ArrayListDemo {
 		
 		// Two Ways to loop through the collection
 		Iterator it = lNames.iterator();
-		// 1.
+		// process 1.
 		while(it.hasNext()) {
 			System.out.println(it.next());
 		}
-		//2.
+		//process 2.
 		for(Iterator<String> it1=lNames.iterator();it1.hasNext();) {
 			System.out.println(it1.next());
 		}
-		// 3. 
+		// process 3. 
 		for(String str:lNames) {
 			System.out.println(str);
 		}
-		
-		
-		
 	}
 }
