@@ -8,7 +8,8 @@ public class PatternPrinting {
 	public static void main(String args[]) {
 		//pattern_01(5);
 		//pattern_02(5);
-		pattern_03(5);
+		//pattern_03(5);
+		pattern_04(5);
 		
 	}
 	
@@ -42,5 +43,29 @@ public class PatternPrinting {
 			}
 			System.out.println("");
 		}
+	}
+	public static void pattern_04(int noOfRow) {	
+		for(int row=1;row<= noOfRow;row++) {
+			int space = noOfRow > row ? noOfRow - row : row - noOfRow;
+			//int totalCol = noOfRow > row ? 2* row - 1 : ;
+			for(int s=1;s<=space;s++) {
+				System.out.print(" ");
+			}
+			for(int i=1;i<= 2 * row - 1; i++) {
+				System.out.print("*");
+			}
+			System.out.println("");
+		}
+		
+		//need a work
+		for(int row=1;row> noOfRow - 1; row++) {
+			for (int j=2 * noOfRow - 1 ;j> row;j--) {
+				System.out.print(" ");
+			}
+			for(int col=1;col>noOfRow -1;col++) {
+				System.out.print("*");
+			}
+		}
+		System.out.println("");
 	}
 }

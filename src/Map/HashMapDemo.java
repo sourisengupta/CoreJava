@@ -2,7 +2,7 @@ package Map;
 
 import java.util.*;
 
-public class AHashMapDemo {
+public class HashMapDemo {
 	
 	public static void main(String[] args) {
 		/*

@@ -1,7 +1,9 @@
 package InterviewProblems;
 
+import java.awt.event.ItemEvent;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
@@ -37,6 +39,9 @@ public class FindDuplicateChar {
 				System.out.println("Duplicate found for " + key);
 			}
 		}
+		
+		findDuplicateChar("abcdabcdhdsladhlasdnkacnansxcnacsnlcasknalcsnalscnk caklnjasckna");
+		findDupCharacter("abcdabcdasdfjasbcjasbcnjnascxaslcnlasn");
 	}
 
 	// Find the unique character from a string
@@ -51,5 +56,44 @@ public class FindDuplicateChar {
 		}
 	}
 	
+	public static void findDuplicateChar(String text) {
+		
+		Map<Character, Integer> map = new HashMap<Character, Integer>();
+		
+		for(int i=0;i<text.length();i++) {
+			if(!map.containsKey(text.charAt(i))) {
+				map.put(text.charAt(i), 1);
+			}
+			else {
+				map.put(text.charAt(i), map.get(text.charAt(i)) + 1);
+			}
+		}
+		
+		for(char key: map.keySet()) {
+			if(map.get(key) > 1) {
+				System.out.println("Key: "+key+" Count: "+map.get(key));
+			}
+			
+		}
+		
+	}
 	
+	public static void findDupCharacter(String text) {
+		
+		Set<Character> texts = new HashSet<>();
+		for(int i=0;i<text.length();i++) {
+			for(int j=i+1;j<text.length();j++) {
+				if(text.charAt(i) == text.charAt(j)) {
+					texts.add(text.charAt(i));
+					break;
+				}				
+			}			
+		}
+		
+		Iterator<Character> it = texts.iterator();
+		while(it.hasNext()) {
+			System.out.println(it.next());
+		}
+		
+	}
 }
