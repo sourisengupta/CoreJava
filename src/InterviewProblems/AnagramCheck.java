@@ -7,7 +7,7 @@ import java.util.Arrays;
 public class AnagramCheck {
 	
 	public static void main(String []args){
-        boolean flag = analogWord("race","care");
+        boolean flag = analogWord1("race","care");
         if(flag){
             System.out.println("The words are analog ");
         }
@@ -16,6 +16,16 @@ public class AnagramCheck {
         }
         
      }
+	public static boolean analogWord1(String str1, String str2) {
+		
+		char c_str1[] = str1.toCharArray();
+		char c_str2[] = str2.toCharArray();
+		
+		Arrays.sort(c_str1);
+		Arrays.sort(c_str2);
+		
+		return Arrays.equals(c_str1, c_str2);
+	}
      
      public static boolean analogWord(String word1, String word2){
          
