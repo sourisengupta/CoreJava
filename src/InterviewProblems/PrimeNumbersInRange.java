@@ -21,14 +21,20 @@ public class PrimeNumbersInRange {
 		}
 	}
 	public static boolean checkPrime(int num) {
-		for(int i=2;i<=num;i++) {
-			System.out.println("The number= "+i);
+		boolean flg = true;
+		for(int i=2;i<num;i++) {
 			if(num%i == 0) {
-				return false;			
-			}
-			
+				flg = false;
+				break;
+			}			
 		}
-		return true;
+		if(flg) {
+			return true;
+		}
+		else {
+			return false;
+		}
+		
 		
 	}
 	
