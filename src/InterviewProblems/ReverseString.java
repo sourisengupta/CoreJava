@@ -19,5 +19,15 @@ public class ReverseString {
 		String date1 ="09/20/2020";
 		String[] arrStr = date1.split("/");
 		System.out.println(arrStr[1]+"/"+arrStr[0]+"/"+arrStr[2]);
+		
+		revString("Helloworld");
+	}
+	
+	public static void revString(String text) {
+		char arr[] =  text.toCharArray();
+		
+		for(int i=text.length()-1;i>=0;i--) {
+			System.out.print(arr[i]);
+		}
 	}
 }
